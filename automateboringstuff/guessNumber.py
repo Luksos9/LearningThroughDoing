@@ -1,5 +1,6 @@
 import random
 
+#This is a guess the number game
 randomNumber = random.randrange(1,21)
 print("I am thinking of a number between 1 and 20")
 guess = 0
