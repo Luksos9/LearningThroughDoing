@@ -39,8 +39,10 @@ while userMove != "q":
         win += 1
     elif computerMove == "r" and userMove == "s":
         print("{} vs {}. Computer wins!".format(computerMove, userMove))
+        loose += 1
     elif computerMove == "s" and userMove == "r":
         print("{} vs {}. Player wins!".format(computerMove, userMove))
+        win += 1
     elif userMove == "q":
         print("Bye!")
         break
