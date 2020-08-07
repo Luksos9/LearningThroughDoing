@@ -6,7 +6,7 @@ tie = 0
 win = 0
 loose = 0
 userMove = ""
-while userMove != "q":
+while userMove != "q": #Main loop, breaks when user chooses quit
     print("{} wins, {} losses, {} Ties".format(win, loose, tie))
     userMove = input("Enter your move:\n"
                                       "(r) - rock\n"
