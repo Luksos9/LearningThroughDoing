@@ -29,9 +29,9 @@ for experimentNumber in range(10000):
 
             HeadsCounter += 1
 
-            if TailsCounter == 1:
+            if TailsCounter > 0:
 
-                HeadsCounter = 0
+                TailsCounter = 0
 
             elif TailsCounter == 0 and HeadsCounter == 6:
 
@@ -44,7 +44,7 @@ for experimentNumber in range(10000):
 
             TailsCounter += 1
 
-            if HeadsCounter == 1:
+            if HeadsCounter > 0:
 
                 HeadsCounter = 0
 
@@ -54,4 +54,6 @@ for experimentNumber in range(10000):
                 TailsCounter = 0
 
 
-print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+print('Chance of streak: %s%%' % (numberOfStreaks / 1000000))
+
+
