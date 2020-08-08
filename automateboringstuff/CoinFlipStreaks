@@ -31,11 +31,12 @@ for experimentNumber in range(10000):
             if TailsCounter == 0 and HeadsCounter == 6:
 
                 numberOfStreaks += 1
-                print(numberOfStreaks)
 
-            elif TailsCounter > 1:
+
+            elif TailsCounter == 1:
 
                 HeadsCounter = 0
+                TailsCounter = 0
 
 
         elif value == "T":
@@ -45,12 +46,12 @@ for experimentNumber in range(10000):
             if HeadsCounter == 0 and TailsCounter == 6:
 
                 numberOfStreaks += 1
-                print(numberOfStreaks)
 
-            elif HeadsCounter > 1:
+
+            elif HeadsCounter == 1:
 
                 TailsCounter = 0
-
+                HeadsCounter = 0
 
 
 
