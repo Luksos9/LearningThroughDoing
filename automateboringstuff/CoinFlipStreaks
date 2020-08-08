@@ -1,0 +1,44 @@
+#Function calculates how likely it is to get Head or Tail 6times in a row
+
+import random
+
+numberOfStreaks = 0
+for experimentNumber in range(10000):
+    # Code that creates a list of 100 'heads' or 'tails' values.
+    ListOfCoin = []
+
+    for i in range(0,101):
+
+        H_or_T = random.randint(0,1)
+
+        if H_or_T == 0:
+            ListOfCoin.append("H")
+
+        else:
+            ListOfCoin.append("T")
+
+
+    # Code that checks if there is a streak of 6 heads or tails in a row.
+
+    for value in ListOfCoin:
+
+        HeadsCounter = 0
+        TailsCounter = 0
+
+        if ListOfCoin[value] == "H":
+
+            HeadsCounter += 1
+
+        elif ListOfCoin[value] == "T":
+
+            TailsCounter += 1
+
+            if HeadsCounter == 6:
+
+                numberOfStreaks += 1
+
+            if HeadsCounter == 6:
+
+                numberOfStreaks += 1
+
+print('Chance of streak: %s%%' % (numberOfStreaks / 100))
