@@ -36,6 +36,7 @@ for experimentNumber in range(10000):
             elif TailsCounter == 0 and HeadsCounter == 6:
 
                 numberOfStreaks += 1
+                HeadsCounter = 0
 
 
 
@@ -45,12 +46,12 @@ for experimentNumber in range(10000):
 
             if HeadsCounter == 1:
 
-
                 HeadsCounter = 0
 
             elif HeadsCounter == 0 and TailsCounter == 6:
 
                 numberOfStreaks += 1
+                TailsCounter = 0
 
 
 print('Chance of streak: %s%%' % (numberOfStreaks / 100))
