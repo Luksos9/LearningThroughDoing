@@ -54,6 +54,8 @@ for experimentNumber in range(10000):
                 TailsCounter = 0
 
 
-print('Chance of streak: %s%%' % (numberOfStreaks / 1000000))
+#For e.g in first attemppt(out of 10000), we flip a coin 100 times ; if the streak was 2 times then
+#numberOfStreaks is 2, then we go to second attempt, in the end we get sum of all Streaks in 10000 attempts in 100 tries
+print('Chance of streak in 100 attempts: %s%%' % (numberOfStreaks / 10000))
 
 
