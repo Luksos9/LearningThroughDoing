@@ -19,26 +19,39 @@ for experimentNumber in range(10000):
 
 
     # Code that checks if there is a streak of 6 heads or tails in a row.
+    HeadsCounter = 0
+    TailsCounter = 0
 
     for value in ListOfCoin:
 
-        HeadsCounter = 0
-        TailsCounter = 0
 
-        if ListOfCoin[value] == "H":
-
+        if value == "H":
             HeadsCounter += 1
 
-        elif ListOfCoin[value] == "T":
+            if TailsCounter == 0 and HeadsCounter == 6:
+
+                numberOfStreaks += 1
+                print(numberOfStreaks)
+
+            elif TailsCounter > 1:
+
+                HeadsCounter = 0
+
+
+        elif value == "T":
 
             TailsCounter += 1
 
-            if HeadsCounter == 6:
+            if HeadsCounter == 0 and TailsCounter == 6:
 
                 numberOfStreaks += 1
+                print(numberOfStreaks)
 
-            if HeadsCounter == 6:
+            elif HeadsCounter > 1:
 
-                numberOfStreaks += 1
+                TailsCounter = 0
+
+
+
 
 print('Chance of streak: %s%%' % (numberOfStreaks / 100))
