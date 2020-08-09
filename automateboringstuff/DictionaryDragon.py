@@ -17,9 +17,11 @@ def addToInventory(inventory, itemsLooted):
 def displayInventory(inventory):
     total_item = 0
 
-    for k,v in inventory.items():
-        print(k,v)
+    for k, v in inventory.items():
+        print(k, v)
         total_item += v
+
+    print("Total number of items:", total_item)
 
     return inventory, total_item
 
