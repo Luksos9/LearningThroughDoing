@@ -1,7 +1,7 @@
 """This Program sends an Email"""""
 
 import smtplib
-import functools #with this module i can build function .partial
+import functools #with this module i can build function .partial that allows me to take some arguments as default
 
 
 def sendInfoEmail(user, password, mailFrom, mailTo, mailSubject, mailBody):
