@@ -3,9 +3,9 @@
 import smtplib
 
 mailFrom = 'Your automation system' #From whom email is being send (it can be Your Name)
-mailTo = ['przykladowyEmail@gmail.com'] #Adress that we are sending email to (it is list so can be several)
+mailTo = ['exampleMail@gmail.com'] #Adress that we are sending email to (it is list so can be several)
 mailSubject = 'Processing finished successfully' #E-mail subject
-mailBOdy = '''Hello  
+mailBody = '''Hello  
 
 This mail confirms that processing has finished without problems,
 
@@ -15,7 +15,7 @@ message = """From: {}
 Subject: {}
 
 {}
-""".format(mailFrom, mailSubject, mailBOdy)
+""".format(mailFrom, mailSubject, mailBody)
 
 user = 'uzytkownik123@gmail.com' #Enter your email here
 password = "veryConcealedPassword" #Enter your password here
