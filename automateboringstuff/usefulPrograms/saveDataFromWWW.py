@@ -17,13 +17,13 @@ def save_url_file(url, dir, file, msg):
 
 save_url_to_dir = functools.partial(save_url_file, dir = 'c:/123/', msg = 'Please wait: {}')
 
-url = 'http://mobilo24.eu/spis'
-file = 'spis.html'
+url = 'http://mobilo24.eu/spis' #this is just an example we can change it
+file = 'spis.html' #this too
 save_url_to_dir(url = url, file = file)
 
-url = 'https://www.mobilo24.eu/wp-content/uploads/2015/11/Mobilo_logo_kolko_512-565b1626v1_site_icon.png'
-dir = 'c:/123'
-file = 'logo.png'
+url = 'https://www.mobilo24.eu/wp-content/uploads/2015/11/Mobilo_logo_kolko_512-565b1626v1_site_icon.png' #example
+dir = 'c:/123' #convinient dir to save for myself
+file = 'logo.png' #this is a file(.png) i want to save/download
 
 #this allows us to save the url to dir(I choosen c:/123) only by inputting the url of webside and file that we want
 save_url_to_dir(url = url, file = file)
