@@ -25,5 +25,11 @@ def isPhoneNumber(text):
 
     return True
 
-print(isPhoneNumber('444-444-444'))
 
+userNumber = input("Enter your phone number (e.g 444-444-444)\n")
+
+if isPhoneNumber(userNumber):
+    print("Your number:", userNumber, "is a phone number")
+
+else:
+    print("Your number isn't a phone number")
