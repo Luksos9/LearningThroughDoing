@@ -1,4 +1,5 @@
 # English to Pig Latin
+# Program solidifies knowledge about string manipulation
 print('Enter the English message to translate into Pig Latin:')
 message = input()
 
