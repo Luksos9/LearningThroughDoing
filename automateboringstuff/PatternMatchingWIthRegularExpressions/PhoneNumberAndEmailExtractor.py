@@ -1,6 +1,7 @@
 # This program can replace the text on the clipboard with just the phone numbers and email addresses it finds.
 # Useful if you want the boring task of finding every phone number and email adress in a long doc or web page.
-
+""" To run this program just go to some web page or doc press ctrl + A to select all the text
+    Then just press ctrl + c to copy it to clipboard. When you run this program it will give u emails and phone nums"""
 import pyperclip
 import re
 
