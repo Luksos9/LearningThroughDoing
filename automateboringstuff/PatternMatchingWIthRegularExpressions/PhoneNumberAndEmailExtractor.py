@@ -15,8 +15,6 @@ phoneRegex = re.compile(r"""(   #r used to read 'raw' text, so as it is
 (\s*(ext|x|ext.)\s*(\d{2,5}))?  #optional extension
 )""", re.VERBOSE)
 
-# TODO: Create email regex.
-
 # Create Email regex
 
 emailRegex = re.compile(r"""(
@@ -26,7 +24,19 @@ emailRegex = re.compile(r"""(
 (\.[a-zA-Z]{2,4})   #dot and after it something (.pl or .com etc)
 )""", re.VERBOSE)    #VERBOSE allows you to add whitespace and comments
 
-# TODO: Find matches in clipboard text.
+# Find matches in clipboard text.
+
+text = str(pyperclip.paste())
+
+matches = []
+for groups in phoneRegex.findall(text):
+    phoneNum = '-'.join([groups[1], groups[3], groups[5]])
+    if groups[8] != '':
+        phoneNum += ' x' + groups[8]
+    matches.append(phoneNum)
+
+for groups in emailRegex.findall(text):
+    matches.append(groups[0])
 
 # TODO: Copy results to the clipboard.
 
