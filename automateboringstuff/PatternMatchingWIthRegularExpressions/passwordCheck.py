@@ -28,12 +28,16 @@ import re
 
 def strongPassword(password):
     if passRegex1.search(password) == None:
+        print("Atleast 8 characters required")
         return False
-    if passRegex2.search(password) == None:
+    elif passRegex2.search(password) == None:
+        print("Atleast one digit required ")
         return False
-    if passRegex3.search(password) == None:
+    elif passRegex3.search(password) == None:
+        print("Atleast one letter required")
         return False
-    if passRegex4.search(password) == None:
+    elif passRegex4.search(password) == None:
+        print("Atleast one big letter required")
         return False
     else:
         return True
@@ -43,7 +47,7 @@ passRegex2 = re.compile(r'\d+')
 passRegex3 = re.compile(r'[a-z]')
 passRegex4 = re.compile(r'[A-Z]')
 
-if strongPassword('Thishasatleast8characters') == True:
+if strongPassword('Ahishasatleastcharacters') == True:
     print("Strong Password")
 else:
     print("This is not a strong password")
