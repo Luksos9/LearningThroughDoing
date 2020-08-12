@@ -1,4 +1,4 @@
-#There are 3 ways to create function that checks whether password is strong or not
+#Below there are shown 3 ways to create function that checks whether password is strong or not
 
 from re import compile, search
 
