@@ -1,5 +1,6 @@
-# Program sprawdza czy podany numer telefonu jest poprawnie zbudowany
-# Zaklada ze nr sklada sie z 9 cyfr i po kazdych 3 cyfrach jest odseparowany za pomoca "-"
+# Program check if the telephone number is correct
+# It assumes that the phone number is made of 9 digits separated by dash "-"
+"""using Regex module is much more efficient in this type of programs"""
 
 def isPhoneNumber(text):
     if len(text) != 11:
