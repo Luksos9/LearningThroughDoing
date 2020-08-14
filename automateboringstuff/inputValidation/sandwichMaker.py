@@ -28,6 +28,6 @@ for item in extras:
 
 print("You get {} sandwiches :".format(amountOfSandwiches), breadType, proteinType, addCheese, a)
 
-# TODO: Making this program shorter
+# TODO: Making this program shorter or more organized (functions, shorter ways)
 # TODO: Adding more comments
 # TODO: Adding prices for each of options, and display a total cost.
