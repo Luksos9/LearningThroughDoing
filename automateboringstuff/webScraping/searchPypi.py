@@ -10,7 +10,7 @@
 import requests, sys, webbrowser, bs4
 
 print('Searching...')  # display text while downloading the rearch result page
-res = requests.get('https://google.com/search?q=' 'https://pypi.org/search/?q=' + ' '.join(sys.argv[1:]))
+res = requests.get('https://google.com/search?q=''https://pypi.org/search/?q=' + ''.join(sys.argv[1:]))
 res.raise_for_status()
 
 # Retrieve top search result links.
