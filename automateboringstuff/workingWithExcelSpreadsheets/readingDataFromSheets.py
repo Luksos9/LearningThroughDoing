@@ -32,3 +32,9 @@ resultFile = open('census2010.py', 'w')
 resultFile.write('allData = ' + pprint.pformat(countyData))
 resultFile.close()
 print('Done.')
+
+"""What else could be done using such program?
+*Compare data across multiple rows in a spreadsheet.
+*Open multiple Excel files and compare data between spreadsheets.
+*Check whether a spreadsheet has blank rows or invalid data in any cells and alert the user if it does.
+*Read data from a spreadsheet and use it as the input for your Python programs."""
