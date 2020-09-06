@@ -25,3 +25,9 @@ for rowNum in range(2, sheet.max_row):  # skip the first row
         sheet.cell(row=rowNum, column=2).value = PRICE_UPDATES[produceName]
 
 wb.save('updatedProduceSales.xlsx')
+
+"""Ideas to similiar programs:
+*Read data from one spreadsheet and write it to parts of other spreadsheets.
+*Read data from websites, text files, or the clipboard and write it to a spreadsheet.
+*Automatically “clean up” data in spreadsheets. For example, it could use regular expressions to read
+multiple formats of phone numbers and edit them to a single, standard format."""
