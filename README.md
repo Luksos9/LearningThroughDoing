@@ -18,7 +18,7 @@ Few short games that use some things that learned and wanted to solidify by writ
 
 #### someSimplePrograms
 
-Also solidification of things that i lernt by writting programs.
+Also solidification of things that i learned by writting programs.
 
 #### usefulPrograms
 
